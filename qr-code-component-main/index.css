@@ -1,0 +1,59 @@
+@import url("__base.css");
+
+:root{
+    /* colors */
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-slate-300: hsl(212, 45%, 89%);
+    --clr-slate-500: hsl(216, 15%, 48%);
+    --clr-slate-900: hsl(218, 44%, 22%);
+
+    /* font family  */
+    --ff-outfit: "Outfit", system-ui, sans-serif;
+
+    /* font size */
+    --fs-15: 15px;
+
+    /* font weight */
+    --fw-400: 400;
+    --fw-700: 700;
+
+    /* spacing */
+    --sp-40: 2.5rem;
+    --sp-24: 1.5rem;
+    --sp-16: 1rem;
+}
+
+.text-preset-1{
+    font-family: var(--ff-outfit);
+    font-weight: var(--fw-700);
+    font-size: 22px;
+    line-height: 120%;
+    color: var(--clr-slate-900);
+    margin-bottom: 16px;
+}
+
+.text-preset-2{
+    font-family: var(--ff-outfit);
+    font-weight: var(--fw-400);
+    font-size: 15px;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    color: var(--clr-slate-500);
+}
+
+.content{
+    background: var(--clr-white);
+    width: 320px;
+    height: 499px;
+    padding: 16px;
+    border-radius: 20px;
+    img{
+        width: 288px;
+        height: 288px;
+        border-radius: 16px;
+        margin-bottom: 24px;
+    }
+    .text{
+        text-align: center;
+    }
+}
