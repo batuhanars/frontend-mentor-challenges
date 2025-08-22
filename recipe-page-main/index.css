@@ -5,16 +5,28 @@
     border-radius: 24px;
     width: 700px;
     margin-block: 15%;
+    padding: 36px;
+
+    @media screen and (max-width: 375px) {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    figure {
+        img {
+            border-radius: 24px;
+            width: 100%;
+
+            @media screen and (max-width: 375px) {
+                border-radius: 0;
+            }
+        }
+    }
 
     .content {
-        margin: 36px;
-
-        figure {
-
-            img {
-                border-radius: 24px;
-                width: 100%;
-            }
+        @media screen and (max-width: 375px) {
+            margin: 36px;
         }
 
         h1 {
@@ -22,11 +34,19 @@
             margin-block: 24px;
             font-family: var(--ff-young-serif);
             font-weight: var(--fw-400);
+
+            @media screen and (max-width:375px) {
+                display: inline;
+            }
         }
 
         p {
             font-family: var(--ff-outfit);
             color: var(--clr-stone-600);
+
+            @media screen and (max-width:375px) {
+                margin-top: 24px;
+            }
         }
 
         .line {
@@ -54,6 +74,7 @@
                     margin-block: 8px;
                     font-family: var(--ff-outfit);
                     color: var(--clr-stone-600);
+                    display: flex;
 
                     &::before {
                         content: "•";
@@ -80,6 +101,7 @@
                     margin-block: 8px;
                     font-family: var(--ff-outfit);
                     color: var(--clr-stone-600);
+                    display: flex;
 
                     &::before {
                         content: "•";
