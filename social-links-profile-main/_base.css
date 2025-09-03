@@ -38,7 +38,13 @@ body {
     /* 5. Improve text rendering */
     -webkit-font-smoothing: antialiased;
 
+    display: grid;
+    place-content: center;
+    background: var(--clr-grey-900);
     font-size: 14px;
+    color: var(--clr-white);
+    font-family: var(--ff-inter);
+    min-height: 100vh;
 }
 
 /* 6. Improve media defaults */
