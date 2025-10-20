@@ -1,0 +1,96 @@
+@import url("./_base.css");
+
+.container {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+
+img {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+}
+
+.faq-card {
+    background: var(--clr-white);
+    width: 650px;
+    padding: 30px 40px;
+    border-radius: 24px;
+
+    & .card-header {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+
+        & .title {
+            font-size: 64px;
+            font-weight: var(--fw-bold);
+        }
+    }
+
+    & .card-body {
+        & .accordion-item {
+            border-bottom: 1px solid var(--clr-purple-100);
+            padding-block: 24px;
+
+            &:last-child {
+                border: none;
+            }
+
+            & .accordion-item-header {
+                display: flex;
+                justify-content: space-between;
+
+                & .accordion-item-title {
+                    font-size: 20px;
+                    font-weight: var(--fw-bold);
+
+                    & a {
+                        color: var(--clr-purple-950);
+
+                        &:hover {
+                            color: var(--clr-purple-600);
+                        }
+                    }
+                }
+
+                & .icon-plus {
+                    &.passive {
+                        display: none;
+                    }
+
+                    &.active {
+                        display: block;
+                    }
+                }
+
+                & .icon-minus {
+                    &.passive {
+                        display: none;
+                    }
+
+                    &.active {
+                        display: block;
+                    }
+                }
+            }
+
+            & .accordion-item-body {
+                display: none;
+                margin-top: 24px;
+
+                &.active {
+                    display: block;
+                }
+
+                & p {
+                    font-size: 17px;
+                    color: rgba(140, 105, 145, .7);
+                    font-weight: var(--fw-medium);
+                }
+            }
+        }
+    }
+}
