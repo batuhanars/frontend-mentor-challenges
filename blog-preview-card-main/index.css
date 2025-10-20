@@ -1,0 +1,79 @@
+@import url("_base.css");
+
+.card {
+    max-width: 384px;
+    border-radius: 20px;
+    padding: var(--sp-24);
+    background: var(--clr-white);
+    border: 1px solid var(--clr-gray-950);
+    box-shadow: 10px 10px var(--clr-gray-950);
+
+    @media screen and (max-width: 30rem) {
+        margin-inline: var(--sp-24);
+    }
+
+    & .card-image img {
+        border-radius: 10px;
+    }
+
+    .card-content {
+        margin-block: var(--sp-24);
+
+        & .category {
+            display: inline-block;
+            background: var(--clr-yellow);
+            padding: 4px 12px;
+            font-size: var(--fs-sm);
+            font-weight: var(--fw-extra-bold);
+
+            @media screen and (max-width:30rem) {
+                font-size: var(--fs-xs);
+            }
+        }
+
+        & .publish-date {
+            margin-block: var(--sp-12);
+            font-size: var(--fs-sm);
+            font-weight: var(--fw-medium);
+
+            @media screen and (max-width:30rem) {
+                font-size: var(--fs-xs);
+            }
+        }
+
+        & .title {
+            font-size: var(--fs-xl);
+            font-weight: var(--fw-extra-bold);
+            margin-bottom: var(--sp-12);
+            cursor: pointer;
+
+            @media screen and (max-width:30rem) {
+                font-size: var(--fs-lg);
+            }
+
+            &:hover {
+                color: var(--clr-yellow);
+            }
+        }
+
+        & .description {
+            font-weight: var(--fw-medium);
+            color: var(--clr-gray-500);
+
+            @media screen and (max-width: 30rem) {
+                font-size: var(--fs-sm);
+            }
+        }
+    }
+
+    & .user-info {
+        display: flex;
+        align-items: center;
+        gap: var(--sp-12);
+
+        & .user-name {
+            font-size: var(--fs-sm);
+            font-weight: var(--fw-extra-bold);
+        }
+    }
+}

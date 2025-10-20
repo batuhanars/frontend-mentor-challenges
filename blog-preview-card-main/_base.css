@@ -1,0 +1,110 @@
+@font-face {
+    font-family: "FigTree";
+    src: url("assets/fonts/Figtree-VariableFont_wght.ttf") format("truetype");
+    font-weight: 100 900;
+    font-display: swap;
+}
+
+:root {
+    --clr-yellow: hsl(47, 88%, 63%);
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-gray-500: hsl(0, 0%, 42%);
+    --clr-gray-950: hsl(0, 0%, 7%);
+
+    --ff-figtree: "FigTree", system-ui, sans-serif;
+
+    --fs-xl: 1.5rem;
+    --fs-lg: 1.25rem;
+    --fs-md: 1rem;
+    --fs-sm: .875rem;
+    --fs-xs: .75rem;
+
+    --fw-medium: 500;
+    --fw-extra-bold: 800;
+
+    --sp-24: 1.5rem;
+    --sp-12: .75rem;
+    --sp-8: .5rem;
+    --sp-4: .25rem;
+}
+
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+    margin: 0;
+}
+
+html {
+    font-family: var(--ff-figtree);
+    background: var(--clr-yellow);
+    color: var(--clr-gray-950);
+    font-weight: var(--fw-medium);
+}
+
+body {
+    /* 4. Add accessible line-height */
+    line-height: 1.5;
+    /* 5. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* 7. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+    text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root,
+#__next {
+    isolation: isolate;
+}
